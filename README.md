@@ -39,3 +39,29 @@ When you want to call API, you need authenticated token which in the response af
 http://{application-url}/services/v1/rest/
 ```
 
+## data format on firebase (JSON)
+
+# Example
+```
+{
+  "memberList" : {
+    "data" : [ {
+      "ID" : 1,
+      "name" : "kevin",
+      "pwd" : "kevin"
+    }, {
+      "ID" : 2,
+      "name" : "mary",
+      "pwd" : "mary"
+    }, {
+      "ID" : 3,
+      "name" : "Andy",
+      "pwd" : "Andy"
+    }, {
+      "ID" : 4,
+      "name" : "elmer",
+      "pwd" : "elmer"
+    },
+    ...
+}
+```
