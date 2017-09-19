@@ -41,7 +41,7 @@ http://{application-url}/services/v1/rest/
 
 ## data format on firebase (JSON)
 
-# Example
+### Example
 ```
 {
   "memberList" : {
