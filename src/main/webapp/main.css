@@ -1,0 +1,40 @@
+#app {
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+#login {
+    margin: 50px 0;
+}
+
+#logout {
+    margin: 10px 0 0;
+    text-align: right;
+}
+
+#members, #create-member {
+	margin: 20px 0;
+    padding: 0;
+}
+
+#members .table {
+    margin: 0 15px;
+    width: 95%;
+}
+
+#members .panel-heading, #create-member .panel-heading {
+	margin-bottom: 20px;
+}
+
+#members button {
+	margin: 0 15px;
+}
+
+#login .label, #create-member .label {
+    margin: 10px;
+    font-size: 100%;
+}
+
+#create-member form {
+	padding: 0 15px;
+}

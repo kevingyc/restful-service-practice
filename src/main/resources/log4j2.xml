@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <RollingFile name="RollingFile"
+                     fileName="${sys:catalina.base}/logs/restful-services.log"
+                     filePattern="${sys:catalina.base}/logs/restful-services-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %logger{36}:%L - %msg%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+            </Policies>
+        </RollingFile>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%-5level] %logger{36}:%L - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="error">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+        <Logger name="rest.service" level="info"/>
+    </Loggers>
+</Configuration>
